@@ -10,4 +10,17 @@
 
 @implementation Patient
 
+- (instancetype)initWithName:(NSString *)patientName andAge:(NSInteger)patientAge andContact:(NSString *)contact isOnOtherMeds:(BOOL)onOtherMeds
+{
+    self = [super init];
+    if (self)
+    {
+        _patientName = patientName;
+        _patientAge = patientAge;
+        _contact = contact;
+        _onOtherMeds = NO;
+    }
+    return self;
+}
+
 @end

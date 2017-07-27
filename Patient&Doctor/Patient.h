@@ -10,4 +10,11 @@
 
 @interface Patient : NSObject
 
+@property (nonatomic, strong) NSString *patientName;
+@property (nonatomic, assign) NSInteger patientAge;
+@property (nonatomic, strong) NSString *contact;
+@property (nonatomic, assign) BOOL *onOtherMeds;
+
+- (instancetype)initWithName:(NSString *)patientName andAge:(NSInteger)patientAge andContact:(NSString *)contact isOnOtherMeds:(BOOL)onOtherMeds;
+
 @end
