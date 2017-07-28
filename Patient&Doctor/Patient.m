@@ -10,7 +10,7 @@
 
 @implementation Patient
 
-- (instancetype)initWithName:(NSString *)patientName andAge:(NSInteger)patientAge andContact:(NSString *)contact isOnOtherMeds:(BOOL)onOtherMeds
+- (instancetype)initWithName:(NSString *)patientName andAge:(NSInteger)patientAge andContact:(NSString *)contact hasValidHC:(BOOL)hasValidHealthCard
 {
     self = [super init];
     if (self)
@@ -18,7 +18,7 @@
         _patientName = patientName;
         _patientAge = patientAge;
         _contact = contact;
-        _onOtherMeds = NO;
+        _hasValidHealthCard = hasValidHealthCard;
     }
     return self;
 }

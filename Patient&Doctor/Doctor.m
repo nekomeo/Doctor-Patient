@@ -16,10 +16,24 @@
     if (self)
     {
         _docName = docName;
-        specialization = specialization;
+        _specialization = specialization;
         _docAge = docAge;
+        _acceptedPatients = [[NSMutableSet alloc] init];
     }
     return self;
+}
+
+-(void)addPatientToList:(Patient *)patient
+{
+    if (patient.hasValidHealthCard)
+    {
+        [self.acceptedPatients addObject:patient];
+        NSLog(@"%@ was accepted", patient.patientName);
+    }
+    else
+    {
+        NSLog(@"%@ was not treated", patient.patientName);
+    }
 }
 
 @end
