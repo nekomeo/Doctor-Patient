@@ -34,7 +34,7 @@
     }
     else
     {
-        NSLog(@"%@ was not treated", patient.patientName);
+        NSLog(@"%@ was not accepted", patient.patientName);
     }
 }
 
@@ -43,7 +43,7 @@
     Prescription *prescription = [[Prescription alloc] init];
     
     NSString *prescribedMed = [prescription prescriptionForSymptoms:patient.sickness];
-    NSLog(@"%@ was prescribed %@", patient.patientName, prescribedMed);
+    NSLog(@"%@'s illness was %@ and was prescribed %@", patient.patientName, patient.sickness, prescribedMed);
 }
 
 @end
