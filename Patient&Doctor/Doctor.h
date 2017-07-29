@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Patient.h"
+
+@class Patient, Prescription;
 
 @interface Doctor : NSObject
 @property (nonatomic, strong) NSString *docName;
@@ -17,5 +18,6 @@
 
 - (instancetype)initWithName:(NSString *)docName andSpecialization:(NSString *)specialization andAge:(NSInteger)docAge;
 -(void)addPatientToList:(Patient *)patient;
+- (void)treatAcceptedPatient:(Patient *)prescripton;
 
 @end

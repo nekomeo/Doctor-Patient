@@ -10,6 +10,7 @@
 		6AC488531F2AAAF70030C083 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC488521F2AAAF70030C083 /* main.m */; };
 		6AC4885B1F2AAB440030C083 /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4885A1F2AAB440030C083 /* Doctor.m */; };
 		6AC4885E1F2AAB4B0030C083 /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4885D1F2AAB4B0030C083 /* Patient.m */; };
+		6AC4886E1F2D040A0030C083 /* Prescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC4886D1F2D040A0030C083 /* Prescription.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		6AC4885A1F2AAB440030C083 /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 		6AC4885C1F2AAB4B0030C083 /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
 		6AC4885D1F2AAB4B0030C083 /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		6AC4886C1F2D040A0030C083 /* Prescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prescription.h; sourceTree = "<group>"; };
+		6AC4886D1F2D040A0030C083 /* Prescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Prescription.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +71,8 @@
 				6AC4885A1F2AAB440030C083 /* Doctor.m */,
 				6AC4885C1F2AAB4B0030C083 /* Patient.h */,
 				6AC4885D1F2AAB4B0030C083 /* Patient.m */,
+				6AC4886C1F2D040A0030C083 /* Prescription.h */,
+				6AC4886D1F2D040A0030C083 /* Prescription.m */,
 			);
 			path = "Patient&Doctor";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 				6AC4885E1F2AAB4B0030C083 /* Patient.m in Sources */,
 				6AC4885B1F2AAB440030C083 /* Doctor.m in Sources */,
 				6AC488531F2AAAF70030C083 /* main.m in Sources */,
+				6AC4886E1F2D040A0030C083 /* Prescription.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +266,7 @@
 				6AC488581F2AAAF70030C083 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "Doctor.h"
+#import "Patient.h"
+#import "Prescription.h"
 
 @implementation Doctor
 
@@ -34,6 +36,14 @@
     {
         NSLog(@"%@ was not treated", patient.patientName);
     }
+}
+
+- (void)treatAcceptedPatient:(Patient *)patient
+{
+    Prescription *prescription = [[Prescription alloc] init];
+    
+    NSString *prescribedMed = [prescription prescriptionForSymptoms:patient.sickness];
+    NSLog(@"%@ was prescribed %@", patient.patientName, prescribedMed);
 }
 
 @end
